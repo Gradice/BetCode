@@ -1,0 +1,1259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #201511;
+    --white: #ffffff;
+    --orange: #F24400;
+    --navColor: rgba(54, 35, 29, 0.25);
+}
+
+body {
+    background-color: var(--bg);
+    font-family: "Albert Sans", sans-serif;
+}
+
+.loader{
+    position: fixed;
+    height: 100vh;
+    background: var(--bg);
+    overflow: hidden;
+    margin: 0;
+    opacity: 1;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    transition: 1s;
+    visibility: 3.75s;
+    transition-delay: 5.5s;
+}
+
+.loader-logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader-logo img{
+    width: 25%;
+    animation: pulse 3s infinite ease-in-out;
+}
+
+.loader-hidden{
+    opacity: 0;
+    visibility: hidden;
+  }
+
+header {
+    background-image: url("images/CHILL\ WITH\ THE\ BIG\ BOYS.png"), url("images/Vector\ 440.png");
+    background-repeat: no-repeat;
+    background-size: cover, 100%; /* Change from 'cover' to 'contain' to fit */
+    background-position: center, bottom;
+    padding-bottom: 250px;
+    /* background-position: center; */
+    background-attachment: fixed, scroll;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+/* 
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 80px;
+    background-color: var(--navColor);
+}
+
+nav img {
+    width: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 31px;
+    font-size: 16px;
+}
+
+.nav-links li {
+    color: var(--white);
+    list-style: none;
+    cursor: pointer;
+}
+
+#btn {
+    width: 200px;
+    height: 50px;
+    background-color: var(--orange);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn:hover {
+    background-color: darkorange;
+} */
+
+
+.navbar{
+    background: var(--bg);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    /* max-width: 1300px; */
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.navbar_container a{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#navbar_logo{
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navbar_menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    width: 70%;
+    /* min-width: 600px; */
+    /* justify-content: center; */
+}
+
+.navbar_item{
+    height: 80px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    align-content: center;
+}
+
+.navbar_links{
+    color: #fff;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* width: 145px; */
+    /* width: 100%; */
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+    /* margin: 0;
+    padding: 0; */
+}
+
+.navbar_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 1rem; */
+    width: 100%;
+}
+
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #833ab4;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #ff4400);
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #ff4400);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.navbar_links:hover{
+    color: var(--orange);
+    transition: all 0.3s ease;
+}
+
+.hero-container {
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    overflow: hidden;
+}
+
+/* .hero-text-details{
+    display: flex;
+} */
+
+.hero-pitch {
+    margin-left: 60px;
+}
+
+.hero-pitch-h1{
+    font-family: "Anta", sans-serif;
+    font-size: 80px;
+    max-width: 572px;
+    margin-bottom: 24px;
+    color: var(--white);
+    /* display: flex;
+    flex-direction: column; */
+}
+/* 
+.animate-container h1{
+    margin:0;
+	overflow: hidden;
+}
+
+.animate-container h1 span{
+    display: inline-block;
+    font-family: "Anta", sans-serif;
+    font-size: 80px;
+    margin-bottom: 24px;
+    color: var(--white);
+    line-height: auto;
+    display: none;
+
+    &:nth-of-type(4){
+        color: yellow;
+    }
+}
+
+.animate-container h1 span.text-in{
+	display: block;
+	animation: textIn .5s ease;
+}
+
+.animate-container h1 span.text-out{
+	animation: textOut .5s ease;
+}
+
+@keyframes textIn{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+@keyframes textOut{
+	0%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateY(-100%);
+
+	}
+} */
+
+.changing-word {
+    display: inline-block;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out, color 0.5s ease-in-out;
+  }
+  
+  .fade-out {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+.hero-pitch-h1 span {
+    color: var(--orange);
+}
+
+.sales-pitch {
+    width: 273px;
+    height: 33px;
+    margin-bottom: 24px;
+}
+
+.store-btn {
+    display: flex;
+    gap: 20px;
+}
+
+.store-btn img {
+    width: 135px;
+    height: 40px;
+    animation: bounce 5s infinite ease-in-out;
+}
+
+.app-homepage {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    max-width: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 500px;
+    /* left: 550px;
+    bottom: 10px; */
+}
+
+.app-image-1 {
+    min-width: 1200.95px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Prevents stretching */
+    padding-top: 120px;
+    animation: bounce 5s infinite ease-in-out;
+}
+
+.app-image-2{
+    display: none;
+}
+
+.about-us{
+    background-image: url("images/3d-abstract-space-sky-with-stars-nebula\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: #5C2A17;
+    isolation: isolate;
+}
+
+.about-us h2, .community h2{
+    font-family: "Anta";
+    font-size: 40px;
+    text-align: center;
+    padding-top: 60px;
+    color: var(--white);
+    padding-bottom: 60px;
+    text-shadow: 0px 4px 4px var(--orange);
+}
+
+.about-us ol{
+    padding-left: 30px;
+}
+
+.about-items{
+    width: 80%;
+    margin: auto;
+    color: var(--white);
+}
+
+.about-betcode{
+    width: 812.67px;
+    padding: 30px;
+    float: left;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.about-betcode::after{
+    content: '';
+    position: absolute;
+    background-color: #D9D9D9;
+    z-index: -1;
+    inset: 0;
+    border-radius: 20px;
+    mix-blend-mode: soft-light;
+    animation: pulse 10s infinite ease-in-out;
+}
+
+.about-how{
+    width: 900px;
+    padding: 30px;
+    border-radius: 20px;
+    float: right;
+    position: relative;
+}
+
+.about-how::after{
+    content: '';
+    position: absolute;
+    background-color: #D9D9D9;
+    z-index: -1;
+    inset: 0;
+    border-radius: 20px;
+    mix-blend-mode: soft-light;
+    animation: pulse 10s infinite ease-in-out;
+}
+
+.about-betcode h3, .about-how h3, .bet-of-the-week h3{
+    font-size: 28px;
+    padding-bottom: 10px;
+    color: var(--white);
+}
+
+.about-betcode p, .bet-of-the-week p{
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 32px;
+    color: var(--white);
+}
+
+ol{
+    line-height: 32px;
+}
+
+ol li{
+    font-size: 18px;
+    color: var(--white);
+}
+
+ol li span{
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.bookies-list{
+    background-image: url("images/Over\ 15+\ Bookies\ Integrated.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bookies-list h1{
+    font-size: 64px;
+    width: 391px;
+    color: var(--orange);
+    font-family: "Anta";
+    /* padding-left: 60px; */
+}
+
+.bookies{
+    /* padding-right: 60px; */
+    width: 723.26px;
+}
+
+.bookie-1{
+    display: flex;
+    justify-content: space-between;
+    width: 488.51px;
+    float: right;
+    padding-bottom: 32px;
+}
+.bookie-2{
+    display: flex;
+    justify-content: space-between;
+    width: 488.51px;
+    margin-left: 160px;
+    padding-bottom: 32px;
+}
+.bookie-3{
+    display: flex;
+    justify-content: space-between;
+    width: 488.51px;
+    margin-left: 80px;
+    padding-bottom: 32px;
+}
+.bookie-4{
+    display: flex;
+    justify-content: space-between;
+    width: 488.51px;
+    float: left;
+}
+
+/* Bookie 1: Bouncing effect */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  /* Bookie 2: Slow Rotation */
+  @keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Bookie 3: Pulsing scale */
+  @keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+  
+  /* Bookie 4: Floating side to side */
+  @keyframes float {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+  }
+  
+  /* Apply animations to bookie images */
+  .bookie-1 {
+    animation: float 2s infinite ease-in-out;
+  }
+  .bookie-2 {
+    animation: float 6s infinite linear;
+  }
+  .bookie-3 {
+    animation: float 3s infinite ease-in-out;
+  }
+  .bookie-4 {
+    animation: float 4s infinite ease-in-out;
+  }
+  
+
+.community{
+    background-image: url("images/Join\ Our\ Community.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background-color: #5C2A17;
+    isolation: isolate;
+    /* padding-bottom: 60px; */
+}
+
+.community-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    /* padding: 30px;
+    gap: 30px; */
+}
+
+.com-chat{
+    width: 400px;
+    animation: bounce 5s infinite ease-in-out;
+    /* align-items: end; */
+}
+
+.community-content img{
+    /* max-width: 1200.95px; */
+    /* min-width: 800px; */
+    width: 100%;
+    /* display: none; */
+    height: 100%;
+    object-fit: contain; /* Prevents stretching */
+    /* margin-right: -140px; */
+}
+
+
+
+.community-content-details{
+    /* width: 813px; */
+    height: fit-content;
+}
+
+.community-content-details h1{
+    width: 672px;
+    font-size: 64px;
+    color: var(--orange);
+    font-family: "Anta";
+    padding-bottom: 30px;
+}
+
+.bet-of-the-week{
+    width: 700px;
+    padding: 30px;
+    position: relative;
+}
+
+.bet-of-the-week::after{
+    content: '';
+    position: absolute;
+    background-color: #D9D9D9;
+    z-index: -1;
+    inset: 0;
+    border-radius: 20px;
+    mix-blend-mode: soft-light;
+    animation: pulse 10s infinite ease-in-out;
+}
+
+
+.testimony{
+    background-image: url("images/CHILL\ WITH\ THE\ BIG\ BOYS.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 100vh;
+    height: 852px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    overflow-y: hidden;
+}
+
+.testimony h1{
+    font-family: "Anta";
+    font-size: 96px;
+    color: var(--orange);
+    text-align: center;
+    padding-top: 60px;
+    animation: float 5s infinite ease-in-out;
+}
+
+.tweets{
+    display: flex;
+    justify-content: space-between;
+    position:absolute;
+    left:10px;
+    animation: scroll 20s linear 2.5s infinite;
+}
+
+.tweets-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.tweets-flex .tweets-content:first-child{
+    margin-bottom: 0;
+}
+
+.tweets-flex .tweets-content:last-child{
+    margin-top: 0;
+}
+
+.tweets-content{
+    width: 350px;
+    margin: 10px;
+}
+
+/* @keyframes scroll {
+    95% { left: -100%; }
+    100% { left: 0; }
+  } */
+
+@keyframes scroll {
+	95% { left: -750px; }  /* top is the number of spans (in this case 8) multiplied by span height (45px as described above)*/
+    100% { left: 0; }
+}
+
+footer{
+    background-image: url("images/Footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 483px;
+    position: relative;
+    background-color: #5C2A17;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 54px;
+}
+
+.footer-content-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.footer-logo{
+    width: 176.15px;
+    height: 141.57px;
+}
+
+.footer-slogan{
+    font-family: "Anta";
+    font-size: 24px;
+    padding-bottom: 34px;
+    color: var(--white);
+}
+
+.footer-store-btn{
+    display: flex;
+    width: 290px;
+    height: 40px;
+    gap: 20px;
+}
+
+.footer-store-btn img{
+    width: 135px;
+    height: inherit;
+    animation: bounce 5s infinite ease-in-out;
+}
+
+.footer-contain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.footer-content-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.email-action{
+    display: flex;
+    gap: 10px;
+    color: var(--white);
+    font-family: "Albert Sans";
+}
+
+.email-action p{
+    font-weight: 600;
+}
+
+.footer-content-2 ul{
+    list-style-type: none;
+    color: white;
+}
+
+.footer-content-2 ul a{
+    text-decoration: none;
+}
+
+.footer-content-2 ul a li:hover{
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+.footer-content-2 ul li{
+    color: var(--white);
+    font-weight: 600;
+}
+
+#betcode-email{
+    text-decoration: none;
+    color: #ffccbb;
+    font-weight: lighter;
+}
+
+#betcode-email:hover{
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+.social-links{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.social-links p{
+    color: var(--white);
+    font-weight: 600;
+}
+
+.social-links img{
+    width: 32px;
+    animation: rotate 10s infinite ease-in-out;
+}
+
+@keyframes scaler {
+    0%{
+        scale: 1.1;
+    }
+
+    100%{
+        scale: 1.4;
+    }
+}
+
+.social-links img:hover{
+    animation: scaler 5s ease-in-out;
+}
+
+.footer-content-3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 28px;
+    padding-bottom: 30px;
+}
+
+.footer-divider{
+    width: 90%;
+    height: 2px;
+    background-color: #97503D;
+}
+
+.copyright{
+    color: #ffccbb;
+    font-family: "Albert Sans";
+    font-weight: lighter;
+}
+
+.bubbles img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+    opacity: 0;
+}
+
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0px;
+}
+
+@keyframes bubble{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    70%{
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 25px;
+}
+.bubbles img:nth-child(2){
+    animation-delay: 1s;
+}
+.bubbles img:nth-child(3){
+    animation-delay: 3s;
+    width: 25px;
+}
+.bubbles img:nth-child(4){
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(5){
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(6){
+    animation-delay: 6s;
+    width: 20px;
+}
+.bubbles img:nth-child(7){
+    animation-delay: 7s;
+    width: 35px;
+}
+
+
+@media (max-width: 1280px) {
+    header{
+        padding-bottom: 0px;
+    }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 60px;
+    }
+
+    .hero-pitch {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-pitch-h1, .animate-container h1 span {
+        font-size: 4rem;
+        max-width: 90%;
+    }
+
+    .store-btn{
+        justify-content: center;
+    }
+
+    .app-homepage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        overflow: hidden;
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+    }
+    
+    .app-image-1 {
+        display: block;
+        /* max-width: 1024px; */
+        width: 100%;
+        height: auto;
+        object-fit: contain; /* Prevents stretching */
+    }
+    
+    /* .app-image-2{
+        display: block;
+        max-width: 1024px;
+        margin-right: auto;
+        margin-left: auto;
+        object-fit: contain; 
+    } */
+
+    .about-us{
+        padding-bottom: 60px;
+    }
+
+    .about-betcode{
+        width: 100%;
+        float: none;
+    }
+    
+    .about-how{
+        width: 100%;
+        padding: 30px;
+        float: none;
+    }
+
+    .bookies-list{
+        flex-direction: column;
+        gap: 34px;
+        justify-content: center;
+    }
+
+    .bookies-list h1{
+        font-size: 4rem;
+        padding-top: 60px;
+        width: 80%;
+        text-align: center;;
+    }
+
+    .bookies{
+        width: 80%;
+        padding-bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bookies img{
+        width: 150px;
+    }
+    
+    .bookie-1{
+        display: flex;
+        justify-content: center;
+        gap: 34px;
+        width: 90%;
+        float: none;
+        padding-bottom: 32px;
+    }
+    .bookie-2{
+        display: flex;
+        justify-content: center;
+        gap: 34px;       
+        width: 90%;
+        margin-left: 0;
+        padding-bottom: 32px;
+    }
+    .bookie-3{
+        display: flex;
+        justify-content: center;
+        gap: 34px;
+        width: 90%;
+        margin-left: 0;
+        padding-bottom: 32px;
+    }
+    .bookie-4{
+        display: flex;
+        justify-content: center;
+        gap: 34px;
+        width: 90%;
+        float: none;
+    }
+    
+    .community{
+        padding-bottom: 0px;
+    }
+
+    .community-content{
+        flex-direction: column;
+        overflow: hidden;
+        justify-content: center;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .community-content img{
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .community-content-details{
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 60px;
+    }
+
+    .community-content-details h1{
+        width: 80%;
+        font-size: 4rem;
+    }
+    
+    .bet-of-the-week{
+        width: 80%;
+    }
+
+    .testimony h1{
+        font-size: 4rem;
+    }
+
+    .footer-content-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 34px;
+    }
+}
+
+
+@media screen and (max-width: 960px){
+    .loader-logo img{
+        width: 50%;
+        animation: pulse 3s infinite ease-in-out;
+    }
+
+
+    .navbar_container{
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+    .navbar_menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: -1;
+        background: var(--bg);
+    }
+
+    .navbar_menu.active{
+        background: var(--bg);
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 60vh;
+        font-size: 1.2rem;
+    }
+
+    #navbar_logo{
+        padding-left: 25px;
+    }
+
+    .navbar_toggle .bar{
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
+
+    .navbar_item{
+        width: 100%;
+        height: 0px;
+        padding: 0px;
+    }
+
+    .navbar_links{
+        text-align: center;
+        /* padding: 2rem; */
+        width: 100%;
+        display: table;
+        height: 0px;
+    }
+
+    .navbar_btn{
+        /* padding-bottom: 2rem; */
+        width: 100%;
+    }
+
+    .button{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 80%;
+       height: 80px;
+       margin: 0;
+    }
+
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar_toggle .bar{
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+       
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-pitch-h1, .animate-container h1 span {
+        font-size: 48px;
+        max-width: 100%;
+    }
+
+    .app-image-1 {
+        min-width: auto;
+        width: 900px;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .bookies-list h1{
+        font-size: 3rem;
+        padding-top: 60px;
+        width: 80%;
+        text-align: center;;
+    }
+
+    .about-us h2, .community h2{
+        font-family: "Anta";
+        font-size: 36px;
+        text-align: center;
+        padding-top: 60px;
+        color: var(--white);
+        padding-bottom: 60px;
+        text-shadow: 0px 4px 4px var(--orange);
+    }
+
+    .community-content-details h1{
+        font-size: 48px;
+        color: var(--orange);
+        font-family: "Anta";
+        padding-bottom: 30px;
+    }
+
+    .com-chat{
+        width: 320px;
+    }
+
+    .community-content img{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 10px;
+    }
+
+    .testimony h1{
+        font-size: 2.8rem;
+    }
+
+    .tweets-content{
+        width: 300px;
+        margin: 10px;
+    }
+
+    .tweets{
+        animation: scroll 50s linear 2.5s infinite;
+    }
+
+    @keyframes scroll {
+        95% { left: -1600px; }  /* top is the number of spans (in this case 8) multiplied by span height (45px as described above)*/
+        100% { left: 0; }
+    }
+
+    .footer-slogan{
+        font-size: 1.2rem;
+    }
+
+    .copyright{
+        color: #ffccbb;
+        font-family: "Albert Sans";
+        font-weight: lighter;
+        font-size: 0.8em;
+    }
+
+}
