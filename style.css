@@ -57,7 +57,6 @@ header {
     background-size: cover, 100%; /* Change from 'cover' to 'contain' to fit */
     background-position: center, bottom;
     padding-bottom: 250px;
-    /* background-position: center; */
     background-attachment: fixed, scroll;
     width: 100%;
     height: 100%;
@@ -65,49 +64,6 @@ header {
     position: relative;
     overflow-x: hidden;
 }
-/* 
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 60px;
-    padding-right: 60px;
-    height: 80px;
-    background-color: var(--navColor);
-}
-
-nav img {
-    width: 50px;
-}
-
-.nav-links {
-    display: flex;
-    gap: 31px;
-    font-size: 16px;
-}
-
-.nav-links li {
-    color: var(--white);
-    list-style: none;
-    cursor: pointer;
-}
-
-#btn {
-    width: 200px;
-    height: 50px;
-    background-color: var(--orange);
-    color: var(--white);
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#btn:hover {
-    background-color: darkorange;
-} */
-
 
 .navbar{
     background: var(--bg);
@@ -127,7 +83,6 @@ nav img {
     height: 80px;
     z-index: 1;
     width: 100%;
-    /* max-width: 1300px; */
     margin: 0 auto;
     padding: 0 50px;
 }
@@ -148,8 +103,6 @@ nav img {
     align-items: center;
     list-style: none;
     width: 70%;
-    /* min-width: 600px; */
-    /* justify-content: center; */
 }
 
 .navbar_item{
@@ -162,23 +115,15 @@ nav img {
 
 .navbar_links{
     color: #fff;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* width: 145px; */
-    /* width: 100%; */
     text-decoration: none;
     height: 100%;
     transition: all 0.3s ease;
-    /* margin: 0;
-    padding: 0; */
 }
 
 .navbar_btn{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 0 1rem; */
     width: 100%;
 }
 
@@ -211,13 +156,8 @@ nav img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* flex-wrap: wrap; */
     overflow: hidden;
 }
-
-/* .hero-text-details{
-    display: flex;
-} */
 
 .hero-pitch {
     margin-left: 60px;
@@ -229,55 +169,7 @@ nav img {
     max-width: 572px;
     margin-bottom: 24px;
     color: var(--white);
-    /* display: flex;
-    flex-direction: column; */
 }
-/* 
-.animate-container h1{
-    margin:0;
-	overflow: hidden;
-}
-
-.animate-container h1 span{
-    display: inline-block;
-    font-family: "Anta", sans-serif;
-    font-size: 80px;
-    margin-bottom: 24px;
-    color: var(--white);
-    line-height: auto;
-    display: none;
-
-    &:nth-of-type(4){
-        color: yellow;
-    }
-}
-
-.animate-container h1 span.text-in{
-	display: block;
-	animation: textIn .5s ease;
-}
-
-.animate-container h1 span.text-out{
-	animation: textOut .5s ease;
-}
-
-@keyframes textIn{
-	0%{
-		transform: translateY(100%);
-	}
-	100%{
-		transform: translateY(0%);
-	}
-}
-@keyframes textOut{
-	0%{
-		transform: translateY(0%);
-	}
-	100%{
-		transform: translateY(-100%);
-
-	}
-} */
 
 .changing-word {
     display: inline-block;
@@ -318,13 +210,10 @@ nav img {
 .app-homepage {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     max-width: 100%;
     overflow: hidden;
     position: absolute;
     left: 500px;
-    /* left: 550px;
-    bottom: 10px; */
 }
 
 .app-image-1 {
@@ -455,11 +344,9 @@ ol li span{
     width: 391px;
     color: var(--orange);
     font-family: "Anta";
-    /* padding-left: 60px; */
 }
 
 .bookies{
-    /* padding-right: 60px; */
     width: 723.26px;
 }
 
@@ -540,7 +427,6 @@ ol li span{
     position: relative;
     background-color: #5C2A17;
     isolation: isolate;
-    /* padding-bottom: 60px; */
 }
 
 .community-content{
@@ -549,30 +435,22 @@ ol li span{
     align-items: center;
     position: relative;
     height: 100%;
-    /* padding: 30px;
-    gap: 30px; */
 }
 
 .com-chat{
     width: 400px;
     animation: bounce 5s infinite ease-in-out;
-    /* align-items: end; */
 }
 
 .community-content img{
-    /* max-width: 1200.95px; */
-    /* min-width: 800px; */
     width: 100%;
-    /* display: none; */
     height: 100%;
     object-fit: contain; /* Prevents stretching */
-    /* margin-right: -140px; */
 }
 
 
 
 .community-content-details{
-    /* width: 813px; */
     height: fit-content;
 }
 
@@ -650,11 +528,6 @@ ol li span{
     width: 350px;
     margin: 10px;
 }
-
-/* @keyframes scroll {
-    95% { left: -100%; }
-    100% { left: 0; }
-  } */
 
 @keyframes scroll {
 	95% { left: -750px; }  /* top is the number of spans (in this case 8) multiplied by span height (45px as described above)*/
@@ -931,20 +804,11 @@ abbr{
     
     .app-image-1 {
         display: block;
-        /* max-width: 1024px; */
         width: 100%;
         height: auto;
         object-fit: contain; /* Prevents stretching */
     }
     
-    /* .app-image-2{
-        display: block;
-        max-width: 1024px;
-        margin-right: auto;
-        margin-left: auto;
-        object-fit: contain; 
-    } */
-
     .about-us{
         padding-bottom: 60px;
     }
@@ -1130,14 +994,12 @@ abbr{
 
     .navbar_links{
         text-align: center;
-        /* padding: 2rem; */
         width: 100%;
         display: table;
         height: 0px;
     }
 
     .navbar_btn{
-        /* padding-bottom: 2rem; */
         width: 100%;
     }
 
