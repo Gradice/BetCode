@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "gsap": "^3.12.7",
-    "gsap-trial": "^3.12.7",
-    "split-text-js": "^1.0.3"
-  }
-}
